@@ -33,7 +33,7 @@
 }
 
 .notfound-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: var(--primary);
   color: #ffffff;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;

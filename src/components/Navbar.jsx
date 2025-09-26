@@ -149,7 +149,7 @@ const Navbar = () => {
             </Link>
             <Link
               to="/register"
-              className="btn-primary text-center"
+              className="navbar-mobile-menu-link"
               onClick={() => setIsOpen(false)}
             >
               Register

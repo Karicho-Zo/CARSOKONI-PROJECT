@@ -65,13 +65,9 @@
 }
 
 .hero-search-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
-}
-
-.hero-search-input-group {
-  grid-column: span 2;
 }
 
 .hero-search-input {
@@ -110,7 +106,7 @@
 }
 
 .hero-search-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: var(--primary);
   color: #ffffff;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -232,7 +228,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: var(--primary);
   color: white;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -375,7 +371,7 @@
 }
 
 .newsletter-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background: var(--primary);
   color: #ffffff;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -454,6 +450,7 @@
   }
 
   .hero-search-grid {
+    display: grid;
     grid-template-columns: 2fr 1fr 1fr;
   }
 

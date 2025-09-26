@@ -42,6 +42,13 @@ body {
   will-change: auto;
 }
 
+/* Fix background rendering on mobile devices */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 /* -----------------------------------------------------------------------------
    2. ADVANCED ACCESSIBILITY FEATURES
    ----------------------------------------------------------------------------- */
@@ -236,6 +243,14 @@ html:focus-within {
   --z-popover: 1060;
   --z-tooltip: 1070;
   --z-toast: 1080;
+
+  /* Additional Colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Theme Colors (for index.css compatibility) */
+  --theme-bg-primary: #ffffff;
+  --theme-text-primary: #1a202c;
 
   /* Typography Scale */
   --font-size-xs: 0.75rem;
